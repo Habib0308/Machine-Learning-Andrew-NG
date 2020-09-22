@@ -1,25 +1,23 @@
 # Machine Learning
 ML are agorithms that gives computers the ability to learn without being explicitly programed.
 
-# Learning Theory
-A computer program is said to learn from Experience E with respect to some task T and some performance measure P if its performance on T as measured by P improves with the experience E
+## What is Machine Learning?
+**Arthur Samuel:**
 
-# Supervised Learning
+"The field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.
 
-# Regression Problem
-Y is continuous
+**Tom Mitchell:**
 
-# Classification Problem
-Y is discrete
+"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
 
-# Unsupervised Learninng
-Given an input X without Y and find me a pattern in this data.
+Example: playing checkers.
 
-**Unsupervised Learninng IS NOT CLUSTERING**
-* Organize Computing Clusters
-* Social Network Analysis
-* Market Segmentation
+E = the experience of playing many games of checkers
 
+T = the task of playing checkers.
 
+P = the probability that the program will win the next game.
 
+In general, any machine learning problem can be assigned to one of two broad classifications:
 
+Supervised learning and Unsupervised learning.
