@@ -80,3 +80,36 @@ This function is otherwise called the "Squared error function", or "Mean squared
 1
 ​	
   term. The following image summarizes what the cost function does:
+
+
+
+If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make a straight line (defined by h_\theta(x)h 
+θ
+​	
+ (x)) which passes through these scattered data points.
+
+Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally, the line should pass through all the points of our training data set. In such a case, the value of J(\theta_0, \theta_1)J(θ 
+0
+​	
+ ,θ 
+1
+​	
+ ) will be 0. The following example shows the ideal situation where we have a cost function of 0.
+
+
+When \theta_1 = 1θ 
+1
+​	
+ =1, we get a slope of 1 which goes through every single data point in our model. Conversely, when \theta_1 = 0.5θ 
+1
+​	
+ =0.5, we see the vertical distance from our fit to the data points increase.
+
+
+This increases our cost function to 0.58. Plotting several other points yields to the following graph:
+
+
+Thus as a goal, we should try to minimize the cost function. In this case, \theta_1 = 1θ 
+1
+​	
+ =1 is our global minimum.
