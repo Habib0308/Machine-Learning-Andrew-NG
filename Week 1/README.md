@@ -20,7 +20,6 @@
   * Identity Matrix
   * Inverse of matrix
   * Transpose of matrix
-* [Numpy Cheatsheet with Linear Algebra]()
 
 
 
