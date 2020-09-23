@@ -12,6 +12,14 @@
   * Applied gradient descent on Linear Regression
 * [Matrices and Vectors](https://github.com/habibanalytics/Machine-Learning-Andrew-NG/blob/master/Week%201/Matrices%20and%20Vectors.md)
 * [Matrices Operations](https://github.com/habibanalytics/Machine-Learning-Andrew-NG/blob/master/Week%201/Matrices%20Operations.md)
+  * Addition & Subtraction of matrices
+  * Multiplication of scalar value
+  * Division of scalar value
+  * Matrix Multiplication
+  * Matrix properties
+  * Identity Matrix
+  * Inverse of matrix
+  * Transpose of matrix
 * [Numpy Cheatsheet with Linear Algebra]()
 
 
