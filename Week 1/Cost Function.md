@@ -1,115 +1,15 @@
-Cost Function
+# Cost Function
 We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.
 
-J(\theta_0, \theta_1) = \dfrac {1}{2m} \displaystyle \sum _{i=1}^m \left ( \hat{y}_{i}- y_{i} \right)^2 = \dfrac {1}{2m} \displaystyle \sum _{i=1}^m \left (h_\theta (x_{i}) - y_{i} \right)^2J(θ 
-0
-​	
- ,θ 
-1
-​	
- )= 
-2m
-1
-​	
-  
-i=1
-∑
-m
-​	
- ( 
-y
-^
-​	
-  
-i
-​	
- −y 
-i
-​	
- ) 
-2
- = 
-2m
-1
-​	
-  
-i=1
-∑
-m
-​	
- (h 
-θ
-​	
- (x 
-i
-​	
- )−y 
-i
-​	
- ) 
-2
- 
+or in simple words it is the difference between the predicted value and the actual value.
 
-To break it apart, it is \frac{1}{2} 
-2
-1
-​	
-  \bar{x} 
-x
-ˉ
-  where \bar{x} 
-x
-ˉ
-  is the mean of the squares of h_\theta (x_{i}) - y_{i}h 
-θ
-​	
- (x 
-i
-​	
- )−y 
-i
-​	
-  , or the difference between the predicted value and the actual value.
+This function is otherwise called the "Squared error function", or "Mean squared error". The mean is halved as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the term. 
 
-This function is otherwise called the "Squared error function", or "Mean squared error". The mean is halved \left(\frac{1}{2}\right)( 
-2
-1
-​	
- ) as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the \frac{1}{2} 
-2
-1
-​	
-  term. The following image summarizes what the cost function does:
+If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make a straight line which passes through these scattered data points.
+
+![imge](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1200px-Linear_regression.svg.png)
 
 
+Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally, the line should pass through all the points of our training data set. In such a case, the value of will be 0. The following example shows the ideal situation where we have a cost function of 0.
 
-If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make a straight line (defined by h_\theta(x)h 
-θ
-​	
- (x)) which passes through these scattered data points.
-
-Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally, the line should pass through all the points of our training data set. In such a case, the value of J(\theta_0, \theta_1)J(θ 
-0
-​	
- ,θ 
-1
-​	
- ) will be 0. The following example shows the ideal situation where we have a cost function of 0.
-
-
-When \theta_1 = 1θ 
-1
-​	
- =1, we get a slope of 1 which goes through every single data point in our model. Conversely, when \theta_1 = 0.5θ 
-1
-​	
- =0.5, we see the vertical distance from our fit to the data points increase.
-
-
-This increases our cost function to 0.58. Plotting several other points yields to the following graph:
-
-
-Thus as a goal, we should try to minimize the cost function. In this case, \theta_1 = 1θ 
-1
-​	
- =1 is our global minimum.
+Thus as a goal, we should try to minimize the cost function. In this case
